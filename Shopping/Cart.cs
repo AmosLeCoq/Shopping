@@ -3,7 +3,7 @@
     public class Cart
     {
         #region private attributes
-        private List<Article> articles = new List<Article>();
+        private List<Article> _articles = new List<Article>();
         #endregion private attributes
 
         #region public methods
