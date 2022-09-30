@@ -20,15 +20,26 @@ namespace TestShopping
             //given
             //refer to Setup
             Assert.AreEqual(0, _cart.Articles.Count());
-            List<Article> articlesToAdd = new List<Article>();
-            Article articleToAdd = new Article();
-            articlesToAdd.Add(articleToAdd);
 
             //when
-            _cart.Add(articlesToAdd);
+            _cart.Add(GenerateArticles(1));
 
             //then
             Assert.AreEqual(1, _cart.Articles.Count());
         }
+
+        #region private methods
+        private List<Article> GenerateArticles(int amountOfArticles)
+        {
+            {
+                List<Article> articles = new List<Article>();
+                for (int i = 0; i < amountOfArticles; i++)
+                {
+                    articles.Add(new Article());
+                }
+                return articles;
+            }
+        }
+        #endregion private methods
     }
 }
