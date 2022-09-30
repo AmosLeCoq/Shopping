@@ -1,6 +1,6 @@
 namespace TestShopping
 {
-    public class TestArticle
+    public class IntegrationShopping
     {
         [SetUp]
         public void Setup()
