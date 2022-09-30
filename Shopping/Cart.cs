@@ -9,7 +9,7 @@
         #region public methods
         public void Add(List<Article> articles)
         {
-            throw new NotImplementedException();
+            _articles.AddRange(articles);
         }
 
         public void Remove(List<Article> articles)
@@ -21,7 +21,7 @@
         {
             get
             {
-                throw new NotImplementedException();
+                return _articles;
             }
         }
         #endregion public methods
