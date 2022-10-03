@@ -12,7 +12,7 @@
             _articles.AddRange(articles);
         }
 
-        public void Remove(List<Article> articles)
+        public void Remove(List<Article>? articles = null)
         {
             throw new NotImplementedException();
         }
